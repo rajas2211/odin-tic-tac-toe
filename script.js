@@ -39,7 +39,7 @@ const Game = (() => {
                 _winner = isWinner;
             }
         });
-        if (_winner) console.log(`${_winner.getMarker()} WINS!`);
+        // if (_winner) console.log(`${_winner.getMarker()} WINS!`);
         return _winner;
     };
     const isOver = () => {
@@ -47,7 +47,7 @@ const Game = (() => {
         checkWinner();
         if (!_gameState.includes(null) || _winner) {
             _gameOver = true;
-            console.log(`Game Over`);
+            // console.log(`Game Over`);
         }
         return _gameOver;
     };
